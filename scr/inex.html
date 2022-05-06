@@ -1,0 +1,43 @@
+<!--Creación de un robot animado. Paula Higuera Consuegra 2021-2022-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Robot</title>
+    <meta charset="UTF-8"/>
+    <style>
+        html, body {
+            background-color: black;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .menu {
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+            z-index: 100;
+            width: 2px;
+            position: absolute;
+            top: 0;
+            padding: 3px;
+        }
+
+        .menu img, .menu canvas {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<!--Botón de ayuda al usuario para ver los controles-->
+<div id="ayuda" class="menu">
+    <img onclick=help() src="../Texturas/help.png" alt="">
+</div>
+<!-- Bibliotecas usadas enlaces de Internet -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
